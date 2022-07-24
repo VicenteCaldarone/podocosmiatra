@@ -1,3 +1,8 @@
+<?php include 'admin/conexion.php'; ?>
+<?php $conexion = new conexion();
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -55,8 +60,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre nosotros</a></li>
-          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Servicios</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
           <li><a class="nav-link scrollto" href="#productos">Productos</a></li>
           <!--
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
@@ -102,9 +107,11 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Services Section ======= -->
+    <!--
     <section id="services" class="services section-bg">
       <?php include 'sections/services.php'; ?>
-    </section><!-- End Services Section -->
+    </section> -->
+    <!-- End Services Section -->
 
     <!-- ======= Call To Action Section ======= -->
     <!--
@@ -114,14 +121,18 @@
     <!-- End Call To Action Section -->
 
     <!-- ======= Our Portfolio Section ======= -->
+    <!--
     <section id="portfolio" class="portfolio">
-      <?php include 'sections/portfolio.php'; ?>
-    </section><!-- End Our Portfolio Section -->
+      <?php /* include 'sections/portfolio.php'; */ ?>
+    </section> -->
+    <!-- End Our Portfolio Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
+    <!--
     <section id="faq" class="faq section-bg">
-      <?php include 'sections/faq.php'; ?>
-    </section><!-- End Frequently Asked Questions Section -->
+      <?php /* include 'sections/faq.php'; */ ?>
+    </section> -->
+    <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Productos ======= -->
     <section id="productos" class="products">

@@ -12,7 +12,7 @@ if ($_POST) {
     if($usuario){
         $_SESSION['usuario'] = "Admin";
         #redirecciono porque ingreso ok 
-        header("location:index.php");
+        header("location:home.php");
         die();
     } else {
         $error = true;

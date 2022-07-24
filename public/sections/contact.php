@@ -2,7 +2,7 @@
 
 <div class="section-title">
   <h2>Contacto</h2>
-  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+  <p>Ante cualquier duda o consulta podés ponerte en contacto con nostros, a la brevedad te responderemos tus inquietudes.</p>
 </div>
 
 <div class="row">
@@ -24,17 +24,22 @@
     <div class="info">
       <div>
         <i class="bi bi-geo-alt"></i>
-        <p>A108 Adam Street<br>New York, NY 535022</p>
+        <p>Calle 131 N° 1024</p>
       </div>
 
       <div>
         <i class="bi bi-envelope"></i>
-        <p>info@example.com</p>
+        <p>info@podocosmiatra.com</p>
       </div>
 
       <div>
-        <i class="bi bi-phone"></i>
-        <p>+1 5589 55488 55s</p>
+        <i class="bi bi-whatsapp"></i>
+        <p>11 6780 0678</p>
+      </div>
+
+      <div>
+        <i class="bi bi-instagram"></i>
+        <p>podocosmiatra_salud</p>
       </div>
 
     </div>

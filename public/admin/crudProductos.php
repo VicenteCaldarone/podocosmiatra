@@ -25,7 +25,7 @@ if($_POST){#si hay envio de datos
         move_uploaded_file($imagen_temporal,"../imagenes/".$imagen);
 
         #para que no intente borrar muchas veces
-        header("Location:index.php");
+        header("Location:home.php");
         die();
     }
 
@@ -69,7 +69,7 @@ if($_POST){#si hay envio de datos
             move_uploaded_file($imagen_temporal,"../imagenes/".$imagen);
         }
 
-        header("location:index.php");
+        header("location:home.php");
         die();
     }
 }
@@ -99,7 +99,7 @@ if($_GET){
         unlink("../imagenes/".$imagen[0]['imagen']);
 
         #para que no intente borrar muchas veces
-        header("Location:index.php");
+        header("Location:home.php");
         die();
     }
 
@@ -136,7 +136,7 @@ if($_GET){
                 </div>
                 <div class="card-body">
                     <!--para recepcionar archivos uso enctype-->
-                    <form action="index.php" method="post" enctype="multipart/form-data">
+                    <form action="home.php" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="<?=$contenidoActual->id?>">
                         <div>
                             <label for="nombre">Nombre del Producto</label>
@@ -185,14 +185,15 @@ if($_GET){
     </div><!--cierra el row-->
     <div class="row d-flex justify-content-center mb-5">
         <div class="col-md-10 col-sm-6">
+            <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
                         <th>Nombre</th>
                         <th>Imagen</th>
                         <th>Descripcion</th>
-                        <th>Eliminar</th>
-                        <th>Modificar</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody >
@@ -203,12 +204,13 @@ if($_GET){
                         <td><?=$contenido['nombre']?></td>
                         <td> <img width="100" src="../imagenes/<?=$contenido['imagen']?>" alt="">  </td>
                         <td class="texto"><?=$contenido['descripcion']?></td>
-                        <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?=$contenido['id_contenido']?>">Eliminar</a></td>
-                        <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?=$contenido['id_contenido']?>">Modificar</a></td>
+                        <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?=$contenido['id_contenido']?>"><i class="bi bi-pencil"></i></a></td>
+                        <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?=$contenido['id_contenido']?>"><i class="bi bi-trash"></i></a></td>
                     </tr>
 
                     <?php } ?>
                 </tbody>
             </table>
+            </div>
         </div><!--cierra el col-->  
     </div>

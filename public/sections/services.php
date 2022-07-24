@@ -2,7 +2,7 @@
 
 <div class="section-title">
   <h2>Servicos</h2>
-  <p>Ofrecemos una atención profesional en cada una de las afecciones o patologías en un ambiente ameno y cómodo cumpliendo con los protocolos sanitarios de la profesión.</p>
+  <p>Ofrecemos una atención profesional en cada una de las afecciones y patologías en un ambiente ameno y cómodo cumpliendo con los protocolos sanitarios de la profesión.</p>
 </div>
 
 <div class="row">

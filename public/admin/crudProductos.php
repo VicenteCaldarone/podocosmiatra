@@ -205,7 +205,8 @@ if($_GET){
                         <td> <img width="100" src="../imagenes/<?=$contenido['imagen']?>" alt="">  </td>
                         <td class="texto"><?=$contenido['descripcion']?></td>
                         <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?=$contenido['id_contenido']?>"><i class="bi bi-pencil"></i></a></td>
-                        <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?=$contenido['id_contenido']?>"><i class="bi bi-trash"></i></a></td>
+                        <!-- <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?=$contenido['id_contenido']?>"><i class="bi bi-trash"></i></a></td> -->
+                        <td><a name="eliminar" id="eliminar" class="btn btn-danger" onclick="confirmarBorrado('<?=$contenido['nombre']?>', <?=$contenido['id_contenido']?>);"><i class="bi bi-trash"></i></a></td>
                     </tr>
 
                     <?php } ?>
@@ -214,3 +215,31 @@ if($_GET){
             </div>
         </div><!--cierra el col-->  
     </div>
+    <!-- Modal -->
+    <!--
+    <div class="modal fade" id="confirmacion" data-bs-backdrop="static" tabindex="-1" aria-labelledby="confirmacionLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmacionLabel">Confirmación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Vas a eliminar el producto: <span class="fw-bold" id="nombreProducto"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-aceptar="aceptar">Aceptar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <script>
+        function confirmarBorrado(producto, id){
+            if(confirm('Confirmas la eliminación del producto "'+producto+'"?')){
+                window.location = 'home.php?borrar=' + id;
+            }
+        }
+
+    </script>
